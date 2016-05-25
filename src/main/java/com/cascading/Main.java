@@ -29,7 +29,6 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        System.out.println("Hdfs Job Starts");
         //input and output path
         String inputPath = args[0];
         String outputPath = args[1];
@@ -54,7 +53,6 @@ public class Main {
         //Create the flow
         Flow flow = new HadoopFlowConnector().connect(tapsMap, outTap, pipe);
         flow.complete();
-        System.out.println("Hdfs Job Ends");
     }
 }
 
